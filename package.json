@@ -3,18 +3,26 @@
     "version": "0.0.0",
     "description": "Javascript Code Sniffer",
     "main": "jssniffer.js",
+    "bin": {
+        "jssniffer": "./jssniffer.js"
+    },
     "scripts": {
         "test": "test"
     },
     "engines": {
         "node": ">=0.4.0"
     },
-    "maintainers": [{
-        "name": "Maciej Kowalski",
-        "email": "f.kowal@gmail.com",
-        "web": "http://github.com/fkowal"
-    }],
-    "repository": "https://github.com/fkowal/jssniffer.git",
+    "maintainers": [
+        {
+            "name": "Maciej Kowalski",
+            "email": "f.kowal@gmail.com",
+            "web": "http://github.com/fkowal"
+        }
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/fkowal/jssniffer.git"
+    },
     "keywords": [
         "javascript",
         "code",
@@ -27,6 +35,6 @@
     "dependencies": {
         "esprima": ">= 1.0.0",
         "estraverse": "~0.0.4",
-        "escodegen": "0.0.17"
-    },
+        "escodegen": "0.0.16"
+    }
 }

@@ -2,8 +2,8 @@
 
 var fs = require('fs'),
     Sniffer = require('./lib/sniffer').Sniffer,
-    amd = require('./lib/amd').plugin,
-    bb = require('./lib/backbone').plugin,
+    amd = require('./lib/rules/amd').plugin,
+    bb = require('./lib/rules/backbone').plugin,
     files = process.argv.splice(2);
 
 if (files.length === 0) {
